@@ -1,0 +1,65 @@
+body {
+  background: #b7f115;
+  margin: 0;
+}
+
+.sub-konga {
+  background: #f0f2f5;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: -0.3rem;
+  padding: 10px;
+}
+
+.sub {
+  width: 120px;
+  height: 20px;
+}
+
+nav {
+  display: flex;
+  /* gap: 2rem; */
+  background: #ed017f;
+  justify-content: space-around;
+  /* background: #000; */
+}
+
+.logo {
+  height: 50px;
+}
+
+.store,
+.sell,
+.help,
+.login,
+.cart {
+  color: white;
+  text-decoration: none;
+  /* margin-top: 15px; */
+  padding: 15px;
+}
+
+.cart {
+  background: green;
+  padding: 5px;
+}
+
+a:hover {
+  color: #ed017f;
+  background: #fff;
+}
+
+input {
+  padding: 6px;
+  width: 600px;
+  border-radius: 5px;
+  height: 20px;
+  border-color: white;
+  margin-top: 5px;
+}
+.banner {
+  background: #ec1c1c;
+  width: 100%;
+  height: 150px;
+}
