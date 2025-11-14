@@ -50,13 +50,27 @@ a:hover {
   background: #fff;
 }
 
+span{
+  margin-bottom: 5px;
+  padding: 10px;
+}
 input {
   padding: 6px;
   width: 600px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
   height: 20px;
   border-color: white;
   margin-top: 5px;
+}
+.fa-solid{
+  color:white;
+  background-color: #FBA100;
+  padding: 9px;
+  margin-left: -5px;
+  margin-top: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .banner {
   background: #ec1c1c;
