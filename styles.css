@@ -1,10 +1,14 @@
 body {
   background: #b7f115;
   margin: 0;
+  font-family: Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+  margin: 0px;
+  background-color: #f0f2f5;
 }
 
 .first-banner {
-  height: 80px;
+  height: 70px;
   width: 100%;
 }
 
@@ -14,7 +18,7 @@ body {
   gap: 1rem;
   justify-content: center;
   margin-top: -0.3rem;
-  padding: 10px;
+  padding: 8px;
 }
 
 .sub {
@@ -27,7 +31,7 @@ nav {
   /* gap: 2rem; */
   background: #ed017f;
   justify-content: space-around;
-  padding: 10px;
+  padding: 8px;
   /* background: #000; */
 }
 
@@ -48,20 +52,21 @@ nav {
 }
 
 .cart {
-  background: green;
+  background: #1ac589;
   padding: 15px;
   height: 20px;
   margin: auto 0;
   /* display: inline-block; */
-
-  /* .fa-cart-shopping{
-    padding: 10px;
-  } */
 }
-
+.cart:hover {
+  color: white;
+  background-color: #588e7b;
+  transition-duration: 0.5s;
+}
 a:hover {
   color: #ed017f;
   background: #fff;
+  transition-duration: 0.5s;
 }
 
 span {
@@ -100,16 +105,178 @@ input {
   height: 150px;
 }
 
-ul {
+.nav-list {
   display: flex;
   background-color: #7e0345;
   justify-content: space-around;
   margin: 0;
+
+  li {
+    list-style: none;
+    color: white;
+    padding: 18px;
+    font-size: 13px;
+  }
 }
 
-li {
-  list-style: none;
-  color: white;
-  padding: 18px;
+.deals {
+  background-color: white;
+  padding: 15px;
+  margin: 5px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.home-deals {
+  margin-left: 5rem;
+  /* margin-top: 15px; */
   font-size: 13px;
+}
+
+.amazing {
+  margin-left: 1rem;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.sec-banner-container {
+  a:hover {
+    color: #ffffff;
+  }
+}
+.second-banner {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+}
+
+.grid-container {
+  margin: 50px;
+}
+
+.grid-list {
+  display: grid;
+  row-gap: 1rem;
+  column-gap: 4rem;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+  /* padding: 0 20px; */
+  /* display: block; */
+
+  li {
+    /* width: 60px; */
+    padding: 15px;
+    background: white;
+    list-style: none;
+  }
+
+  li:hover {
+    box-shadow: 0px 0px 10px grey;
+    transition-duration: 0.5s;
+  }
+
+  img {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.prices {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 5px;
+}
+.str-price {
+  font-size: 20px;
+  margin-top: 10px;
+  /* align-self: center; */
+}
+
+.striked-price {
+  color: rgb(180, 178, 178);
+  font-size: 15px;
+  margin-top: 6px;
+  margin-left: 9px;
+}
+
+p {
+  margin: 0;
+}
+
+.discount {
+  font-size: 11px;
+  font-weight: 500;
+  background-color: pink;
+  padding: 2px;
+  color: brown;
+  margin-top: 10px;
+  margin-left: auto;
+  border-radius: 30%;
+  width: fit-content;
+}
+
+hr {
+  color: #eeeeee;
+}
+
+.first-hr {
+  margin-bottom: 3px;
+  border-radius: 100px;
+  /* height: 3px; */
+}
+.second-hr {
+  margin-top: 35px;
+}
+
+.countdown {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  /* justify-content: center; */
+  align-items: baseline;
+}
+
+.sold {
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gray {
+  width: 80px;
+  background-color: #b5b5b5;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.green {
+  width: 20%;
+  height: 100%;
+  background-color: green;
+  border-radius: 10px;
+}
+
+button {
+  background: white;
+  border: 1px solid #ed017f;
+  color: #f84ca2;
+  padding: 6px;
+  font-size: 13px;
+  width: 95%;
+  margin: 10px auto;
+  display: block;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+button:hover {
+  color: white;
+  background-color: #ed017f;
+  transition-duration: 0.5s;
 }
