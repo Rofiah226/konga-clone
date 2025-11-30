@@ -26,6 +26,12 @@ body {
   height: 20px;
 }
 
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
 nav {
   display: flex;
   /* gap: 2rem; */
@@ -33,6 +39,7 @@ nav {
   justify-content: space-around;
   padding: 8px;
   /* background: #000; */
+  /* z-index: 1000; */
 }
 
 .logo {
@@ -73,7 +80,7 @@ span {
   margin-bottom: 5px;
   padding: 10px;
 }
-input {
+.search-bar {
   padding: 6px;
   width: 600px;
   border-top-left-radius: 5px;
@@ -81,6 +88,14 @@ input {
   height: 20px;
   border-color: white;
   margin-top: 5px;
+}
+
+.search-bar:hover {
+  color: white;
+}
+
+.search-bar:focus {
+  outline: none;
 }
 
 .search {
@@ -110,12 +125,24 @@ input {
   background-color: #7e0345;
   justify-content: space-around;
   margin: 0;
+  /* position: sticky;
+  top: 70px;
+  z-index: 90; */
+  /* left: 0; */
+  /* top: -5; */
 
   li {
+    font-weight: 700;
     list-style: none;
     color: white;
     padding: 18px;
     font-size: 13px;
+  }
+
+  li:hover {
+    color: #000;
+    background-color: white;
+    transition-duration: 0.5s;
   }
 }
 
@@ -262,7 +289,7 @@ hr {
   border-radius: 10px;
 }
 
-button {
+div > button {
   background: white;
   border: 1px solid #ed017f;
   color: #f84ca2;
@@ -279,4 +306,107 @@ button:hover {
   color: white;
   background-color: #ed017f;
   transition-duration: 0.5s;
+}
+
+.contacts-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333232;
+  padding: 20px;
+
+  p:hover {
+    color: white;
+    transition-duration: 0.5s;
+  }
+}
+.email,
+.phone,
+.whatsapp {
+  color: #b5b5b5;
+  display: flex;
+  /* gap: 1rem; */
+}
+
+.deals-footer {
+  color: #b5b5b5;
+}
+
+.margined {
+  margin-top: 15px;
+}
+
+.fa-envelope,
+.fa-whatsapp {
+  /* flex-direction: column; */
+  color: #000;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  /* font-size: 2rem; */
+}
+
+.fa-phone {
+  color: #000;
+  background-color: gray;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+form {
+  display: flex;
+  gap: 0;
+}
+
+.footer-input {
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 17px;
+  /* margin-left:-4px ; */
+}
+
+.footer-input:focus {
+  outline: none;
+}
+
+/* .btn{
+  display: block; */
+/* } */
+button {
+  padding: 1px 6px;
+  display: inline-block;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #ed017f;
+  color: white;
+  border: 1px solid #ed017f;
+  font-size: 16px;
+  /* margin-left: -4px; */
+}
+
+.foot-container {
+  background-color: #000;
+}
+
+.footlist-cont {
+  margin-top: -16px;
+  display: flex;
+
+  ul {
+    padding: 30px 70px;
+  }
+  li {
+    list-style: none;
+    color: #b5b5b5;
+    padding: 10px;
+  }
+
+  li:hover {
+    color: white;
+  }
+}
+
+.copyright {
+  color: #b5b5b5;
+  text-align: center;
 }
