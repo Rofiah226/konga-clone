@@ -1,5 +1,13 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: #b7f115;
+  /* background: #b7f115; */
+  width: 100%;
   margin: 0;
   font-family: Helvetica Neue, -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
@@ -19,6 +27,7 @@ body {
   justify-content: center;
   margin-top: -0.3rem;
   padding: 8px;
+  width: 100%;
 }
 
 .sub {
@@ -37,7 +46,7 @@ nav {
   /* gap: 2rem; */
   background: #ed017f;
   justify-content: space-around;
-  padding: 8px;
+  padding: 5px;
   /* background: #000; */
   /* z-index: 1000; */
 }
@@ -61,8 +70,9 @@ nav {
 .cart {
   background: #1ac589;
   padding: 15px;
-  height: 20px;
+  /* height: 20px; */
   margin: auto 0;
+  /* overflow: hidden; */
   /* display: inline-block; */
 }
 .cart:hover {
@@ -81,8 +91,8 @@ span {
   padding: 10px;
 }
 .search-bar {
-  padding: 6px;
-  width: 600px;
+  padding: 15px;
+  width: 500px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   height: 20px;
@@ -182,15 +192,19 @@ span {
 }
 
 .grid-container {
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  background-color: #000;
 }
 
 .grid-list {
   display: grid;
   row-gap: 1rem;
   column-gap: 4rem;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* margin: 0 auto; */
   /* padding: 0 20px; */
   /* display: block; */
 
@@ -409,4 +423,14 @@ button {
 .copyright {
   color: #b5b5b5;
   text-align: center;
+}
+
+
+@media (max-width: 700px){
+  .first-banner{
+    width: 700px;
+  }
+nav{
+  display: none;
+}
 }
